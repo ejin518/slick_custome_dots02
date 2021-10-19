@@ -1,0 +1,1296 @@
+<style>
+.inner {
+	max-width:1400px;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+/*================================================================header=======*/
+.header {
+	position:absolute;
+	height:100px;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:10;
+	border-bottom:1px solid #fff;
+}
+.header.on {
+	background:#fff;
+}
+.header.on .logo_on{
+	display:block;
+}
+.header.on .logo_w {
+	display:none;
+}
+.header.on .gnb > li > a {
+	color:#000;
+}
+.header.on .burger {
+	background:url(http://innocentgagu.co.kr/images/head_btn_on.png)center center no-repeat;
+	background-size:100%;
+}
+
+.header .inner {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.header h1 {
+	line-height:1;
+}
+.logo_on {
+	display:none;
+}
+.gnb {
+	margin-left:-130px;
+	position:relative;
+	z-index:0;
+}
+.gnb > li {
+	float:left;
+	height:100px;
+}
+.gnb > li + li {
+	margin-left:80px;
+}
+
+
+.gnb > li > a {
+	display:block;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	line-height:100px;
+}
+
+.gnb_bar {
+	position:absolute;
+	z-index:50;
+	width:400px;
+	display:none;
+}
+.gnb_bar.on {
+	display:block;
+}
+.gnb_bar li {
+	float:left;
+	height:70px;
+}
+.gnb_bar li + li {
+	margin-left:30px;
+}
+.gnb_bar li a {
+	display:block;
+	font-size:18px;
+	color:rgba(255,255,255,0.5);
+	font-weight:bold;
+	line-height:70px;
+}
+.burger {
+	width:20px;
+	height:16px;
+	background:url(http://innocentgagu.co.kr/images/head_btn.png)center center no-repeat;
+	background-size:100%;
+	cursor:pointer;
+}
+.bg {
+	width:100%;
+	position:absolute;
+	top:100px;
+	left:0;
+	height:70px;
+	background:#a3724b;
+	display:none;
+	z-index:-1;
+}
+.bg.on {
+	display:block;
+}
+/*================================================================visual=======*/
+.visual {
+	position:relative;
+}
+.vis_slider {
+	line-height:0;
+}
+.vis_slide {
+	height:940px;
+	background:url(http://innocentgagu.co.kr/images/visual_img1.jpg)center center no-repeat;
+	background-size:cover;
+}
+.vis_txt {
+	position:absolute;
+	top:30%;
+	left:0;
+}
+.vis_txt em{
+	line-height:1.5;
+	font-size:30px;
+	color:#fff;
+
+}
+.vis_txt h2 {
+	font-size:40px;
+	color:#fff;
+	line-height:1.5;
+}
+.vis_txt p {
+	font-size:18px;
+	color:#fff;
+	line-height:1.5;
+	margin-top:20px;
+}
+
+.dots {
+	position:absolute;
+	left:10px;
+	top:53%;
+	width:100%;
+}
+.dots .slick-dots li {
+	display:inline-block;
+}
+.dots .slick-dots li + li {
+	margin-left:30px;
+}
+.dots .slick-dots li.slick-active button:before {
+	content:"";
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:1px solid #fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.dots .slick-dots li button{
+	width:10px;
+	height:10px;
+	background:#fff;
+	border-radius:50%;
+	font-size:0;
+	position:relative;
+}
+
+
+/*================================================================section1=======*/
+.section01 {
+	height:930px;
+	background:url(http://innocentgagu.co.kr/images/sec1_bg.jpg)center center no-repeat;
+	background-size:cover;
+}
+.section01 ul {
+	width:100%;
+	height:100%;
+}
+.section01 ul li {
+	float:left;
+	width:50%;
+	position:relative;
+	height:100%;
+}
+.section01 ul li:hover:before {
+	content:"";
+	width:100%;
+	height:100%;
+	background:#a3724b;
+	opacity:0.8;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.section01 ul li:hover a.more {
+	display:inline-block;	
+}
+
+.sec01_txt {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.sec01_txt h1 {
+	font-size:40px;
+	color:#fff;
+}
+.sec01_txt p {
+	font-size:18px;
+	color:#fff;
+}
+a.more {
+	display:none;
+	position:absolute;
+	bottom:-70px;
+	left:50%;
+	transform:translateX(-50%);
+	text-align:center;
+	font-size:18px;
+	color:#fff !important;
+	margin-top:30px;
+	width:100%;
+}
+a.more img {
+	margin-left:10px;
+}
+a:hover, a:focus {
+	color:unset;
+}
+a:link, a:active, a:visited {
+	color:unset;
+}
+
+/*================================================================section2=======*/
+.section02 {
+	padding:200px 0 0;
+	background:url(http://innocentgagu.co.kr/images/sec2_bg.png)center top no-repeat;
+	background-size:1617px 375px;
+	position:relative;
+}
+.pager {
+	position:absolute;
+	top:65%;
+	left:0;
+	width:100%;
+}
+.pager a {
+	position:absolute;
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	cursor:pointer;
+	z-index:20;
+}
+a.prev {
+	left:-30px;
+	background:#000 url(http://innocentgagu.co.kr/images/d_prev.png)center center no-repeat;
+	background-size:17px 27px;
+}
+a.next {
+	right:-30px;
+	background:#000 url(http://innocentgagu.co.kr/images/d_next.png)center center no-repeat;
+	background-size:17px 27px;
+}
+.sec02_tit {
+	text-align:center;
+}
+.sec02_tit em {
+	font-size:18px;
+	color:#a97d5b;
+	font-weight:bold;
+}
+.sec02_tit h2 {
+	font-size:50px;
+	color:#000;
+	line-height:1.5;
+}
+.sec02_tit p {
+	font-size:18px;
+	color:#000;
+}
+.sec02_slider {
+	max-width:1400px;
+	width:100%;
+	margin:50px auto 0;
+	line-height:0;
+	position:relative;
+}
+.sec02_slider:before {
+	content:"";
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.5);
+	position:absolute;
+	left:-100%;
+	z-index:10;
+}
+.sec02_slider:after {
+	content:"";
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.5);
+	position:absolute;
+	right:-100%;
+	top:0;
+	z-index:10;
+}
+.sec02_slider .slick-list {
+	overflow:unset;
+}
+.sec02_slide {
+	padding:0 10px;
+	position:relative;
+}
+.sec02_slide span {
+	display:block;
+	padding-bottom:97.18%;
+	position:relative;
+	overflow:hidden;
+}
+.sec02_slide span img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	max-width:100%;
+	max-height:100%;
+	width:100%;
+	height:100%;
+}
+.sec02_txt {
+	position:absolute;
+	left:0;
+	right:0;
+	text-align:center;
+	bottom:30px;
+}
+.sec02_txt em {
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	line-height:1.5;
+}
+.sec02_txt h3 {
+	font-size:20px;
+	color:#fff;
+	line-height:1.5;
+}
+
+/*================================================================section03=======*/
+.section03 {
+	padding:80px 0 0;
+	width:100%;
+}
+.sec03_tit {
+	display:inline-block;
+	width:30%;
+}
+.sec03_tit em {
+	font-size:18px;
+	font-weight:bold;
+	color:#a3724b;
+}
+.sec03_tit h1 {
+	font-size:45px;
+	color:#000;
+}
+.sec03_tit p {
+	font-size:20px;
+	color:#000;
+}
+.sec03_slider {
+	display:inline-block;
+	width:70%;
+	vertical-align: top;
+	position:relative;
+}
+.sec03_slide ul li {
+	float:left;
+	width:calc(100%/4);
+	padding:10px 4px;
+}
+.sec03_slide ul li a {
+	display:block;
+	border:1px solid #ddd;
+	border-radius:50px;
+	line-height:68px;
+	text-align:center;
+	font-size:20px;
+	color:#000;
+}
+.sec03_slider .slick-prev {
+	width:20px;
+	height:35px;
+	background:url(http://innocentgagu.co.kr/images/d_prev2.png)center center no-repeat;
+	background-size:100%;
+	position:absolute;
+	left:-50px;
+	top:50%;
+	transform:translateY(-50%);
+	font-size:0;
+}
+
+.sec03_slider .slick-next {
+	width:20px;
+	height:35px;
+	background:url(http://innocentgagu.co.kr/images/d_next2.png)center center no-repeat;
+	background-size:100%;
+	position:absolute;
+	right:-50px;
+	top:50%;
+	transform:translateY(-50%);
+	font-size:0;
+}
+
+.sec03_con {
+	padding:160px 0;
+	background:url(http://innocentgagu.co.kr/images/sec4_bg.jpg)center center no-repeat;
+	background-size:cover;
+}
+.sec03_con em {
+	font-size:20px;
+	font-weight:bold;
+	color:#cc8e5e;
+	border-bottom:1px solid #cc8e5e;
+}
+.sec03_con h2 {
+	font-size:60px;
+	color:#fff;
+}
+.sec03_con p {
+	font-size:18px;
+	color:#fff;
+}
+.sec03_con a {
+	display:block;
+	width:250px;
+	height:60px;
+	line-height:58px;
+	border:1px solid #fff;
+	padding:0 30px;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff !important;
+	margin-top:30px;
+}
+
+.sec03_con a img {
+	vertical-align:middle;
+	margin-left:10px;
+}
+
+/*================================================================section4=======*/
+.section04 {
+	padding:80px 0;
+}
+
+.section04 h1 {
+	font-size:60px;
+	color:#000;
+}
+.section04 h1 span {
+	font-size:25px;
+	display:inline-block;
+	margin-left:60px;
+}
+.slick-prev {
+	position:absolute;
+	left:0;
+	top:50%;
+	transform:translateY(-50%);
+	width:83px;
+	height:105px;
+	cursor:pointer;
+	background:rgba(0,0,0,0.5) url(http://innocentgagu.co.kr/images/d_prev.png)center center no-repeat;
+	background-size:17px 27px;
+	z-index:10;
+	font-size:0;
+}
+.slick-next {
+	position:absolute;
+	right:0;
+	top:50%;
+	transform:translateY(-50%);
+	width:83px;
+	height:105px;
+	cursor:pointer;
+	background:rgba(0,0,0,0.5) url(http://innocentgagu.co.kr/images/d_next.png)center center no-repeat;
+	background-size:17px 27px;
+	font-size:0;
+}
+
+/*================================================================section5=======*/
+.section05 {
+	padding:150px 0;
+	background:url(http://innocentgagu.co.kr/images/sec6_bg.jpg)center center no-repeat;
+	background-size:cover;
+}
+.sec05_txt {
+	text-align:center;
+}
+.sec05_txt em {
+	font-size:21px;
+	color:#de9a65;
+	font-weight:bold;
+	border-bottom:1px solid #de9a65;
+}
+.sec05_txt h1 {
+	font-size:50px;
+	color:#fff;
+}
+.sec05_txt p {
+	font-size:20px;
+	color:#fff;
+}
+
+.sec05_txt a {
+	display:inline-block;
+	padding:0 80px;
+	background:#de9a65;
+	line-height:60px;
+	font-size:21px;
+	color:#fff !important;
+	font-weight:bold;
+	margin-top:40px;
+}
+
+
+/*================================================================section06=======*/
+.section06 {
+	padding:130px 0;
+	background:url(http://innocentgagu.co.kr/images/sec7_bg.png)center top no-repeat;
+	background-size:100% 160px;
+}
+.tab_menu {
+	text-align:center;
+}
+.tab_menu li{
+	display:inline-block;
+	padding:0 70px;
+	line-height:55px;
+	height:55px;
+	border:1px solid #000;
+	font-size:16px;
+	font-weight:bold;
+	color:#000;
+	background:#fff;
+	cursor:pointer;
+}
+.tab_menu li.on {
+	background:#000;
+	color:#fff;
+}
+.tab_con ul {
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	margin-top:50px;
+}
+.tab_con ul li a{
+	display:block;
+	padding:40px 0;
+}
+.tab_con ul li + li {
+	border-top:1px solid #ddd;
+}
+
+.tab_con ul li dl {
+	display:table;
+	width:100%;
+}
+.tab_con ul li dl dt {
+	display:table-cell;
+	width:20%;
+	text-align:center;
+}
+.tab_con ul li dl dt span {
+	display:block;
+	font-size:30px;
+	color:#000;
+	line-height:1;
+}
+.tab_con ul li dl dt em {
+	display:block;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	margin-top:10px;
+	line-height:1;
+}
+.tab_con ul li dl dd {
+	display:table-cell;
+	width:80%;
+	vertical-align:middle;
+	position:relative;
+}
+.tab_con ul li dl dd p {
+	font-size:30px;
+	font-weight:bold;
+	color:#000;
+	display:inline-block;
+}
+.tab_con ul li dl dd em {
+	float:right;
+}
+em.view {
+	position:absolute;
+	right:30px;
+	top:50%;
+	transform:translateY(-50%);
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:url(http://innocentgagu.co.kr/images/plus_btn.png)center center no-repeat;
+}
+.sec06_btn {
+	text-align:center;
+	margin-top:60px;
+}
+.sec06_btn a.more2 {
+	display:inline-block;
+	font-size:30px;
+	font-weight:bold;
+	color:#000;
+	border-bottom:1px solid #000;
+}
+
+
+
+/*================================================================navigation=======*/
+
+header {
+	position: fixed;
+	top:50%;
+	right:50px;
+	transform:translateY(-50%);
+	z-index:1000;
+
+}
+#desktop-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#desktop-nav ul li {
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#desktop-nav ul li a {
+	display:inline-block; padding-right:40px; font-size:16px; color:#bab9b8; position:relative; opacity:0; transition:0.5s all;
+}
+#desktop-nav ul li em{
+	display:inline-block;
+	width:5px;
+	height:5px;
+	border-radius:50%;
+	background:#bab9b8;
+	vertical-align:middle;
+
+}
+
+#desktop-nav ul li:hover a {opacity:1;}
+#desktop-nav ul li.active a {opacity:1;}
+#desktop-nav ul li:hover a:before {
+	content:""; width:30px; height:30px; border-radius:50%; border:1px solid #bab9b8; position:absolute; top:50%; right:-32px; transform:translate(-50%,-50%);
+} 
+#desktop-nav ul li.active a:before {
+	content:""; width:30px; height:30px; border-radius:50%; border:1px solid #bab9b8; position:absolute; top:50%;right:-32px; transform:translate(-50%,-50%);
+}
+
+@media screen and (max-width:1400px) {
+	/*================================================================header=======*/
+.header {
+	height:7.14vw;
+	padding:0 3%;
+}
+.header h1 img {
+	height:3.35vw;
+}
+.gnb {
+	margin-left:-9.28vw;
+}
+.gnb > li {
+	height:7.14vw;
+}
+.gnb > li + li {
+	margin-left:5.71vw;
+}
+.gnb > li > a {
+	font-size:1.28vw;
+	line-height:7.14vw;
+}
+.gnb_bar {
+	width:28.57vw;
+}
+
+.gnb_bar li {
+	height:5VW;
+}
+.gnb_bar li + li {
+	margin-left:2.14vw;
+}
+.gnb_bar li a {
+	font-size:1.28vw;
+	line-height:5VW;
+}
+.burger {
+	width:1.42vw;
+	height:1.14vw;
+}
+.bg {
+	top:7.14vw;
+	height:5VW;
+}
+/*================================================================visual=======*/
+
+.vis_slide {
+	height:67.14vw;
+	padding:0 3%;
+}
+.vis_txt em{
+	font-size:2.14vw;
+}
+.vis_txt h2 {
+	font-size:2.85vw;
+}
+.vis_txt p {
+	font-size:1.28vw;
+	margin-top:1.42vw;
+}
+.dots {
+	left:3.5%;
+}
+
+.dots .slick-dots li + li {
+	margin-left:2.14vw;
+}
+.dots .slick-dots li.slick-active button:before {
+	width:2.14vw;
+	height:2.14vw;
+}
+.dots .slick-dots li button{
+	width:0.71vw;
+	height:0.71vw;
+}
+
+/*================================================================section1=======*/
+.section01 {
+	height:66.42vw;
+}
+
+.sec01_txt h1 {
+	font-size:2.85vw;
+}
+.sec01_txt p {
+	font-size:1.28vw;
+}
+a.more {
+	bottom:-5VW;
+	font-size:1.28vw;
+	margin-top:2.14vw;
+}
+a.more img {
+	margin-left:0.71vw;
+}
+
+/*================================================================section2=======*/
+.section02 {
+	padding:14.28vw 3% 0;
+	background:url(http://innocentgagu.co.kr/images/sec2_bg.png)center top no-repeat;
+	background-size:115.5VW 26.78vw;
+}
+
+.pager a {
+	width:5VW;
+	height:5VW;
+}
+a.prev {
+	left:1.14vw;
+	background:#000 url(http://innocentgagu.co.kr/images/d_prev.png)center center no-repeat;
+	background-size:1.21vw 1.92vw;
+}
+a.next {
+	right:1.14vw;
+	background:#000 url(http://innocentgagu.co.kr/images/d_next.png)center center no-repeat;
+	background-size:1.21vw 1.92vw;
+}
+.sec02_slider .slick-list {
+	overflow:hidden;
+}
+.sec02_tit em {
+	font-size:1.28vw;
+}
+.sec02_tit h2 {
+	font-size:3.57vw;
+}
+.sec02_tit p {
+	font-size:1.28vw;
+}
+.sec02_slider {
+	max-width:100VW;
+	margin:3.57vw auto 0;
+}
+
+.sec02_slide {
+	padding:0 0.71vw;
+}
+
+.sec02_txt {
+	bottom:2.14vw;
+}
+.sec02_txt em {
+	font-size:1.14vw;
+}
+.sec02_txt h3 {
+	font-size:1.42vw;
+}
+
+/*================================================================section03=======*/
+.section03 {
+	padding:5.71vw 0 0;
+}
+.section03 .inner {
+	padding:0 3%;
+}
+.sec03_tit {
+	display:block;
+	width:100%;
+}
+.sec03_slider {
+	display:block;
+	width:100%;
+}
+.sec03_tit em {
+	font-size:1.28vw;
+}
+.sec03_tit h1 {
+	font-size:3.21vw;
+}
+.sec03_tit p {
+	font-size:1.42vw;
+}
+
+.sec03_slide ul li {
+	padding:0.71vw 0.28vw;
+}
+.sec03_slide ul li a {
+	border-radius:3.57vw;
+	line-height:4.85vw;
+	font-size:1.42vw;
+}
+.sec03_slider .slick-prev {
+	width:1.42vw;
+	height:2.5VW;
+	left:-1.57vw;
+}
+
+.sec03_slider .slick-next {
+	width:1.42vw;
+	height:2.5VW;
+	right:-1.57vw;
+}
+
+.sec03_con {
+	padding:11.42vw 0;
+}
+.sec03_con em {
+	font-size:1.42vw;
+}
+.sec03_con h2 {
+	font-size:4.28vw;
+}
+.sec03_con p {
+	font-size:1.28vw;
+}
+.sec03_con a {
+	width:17.85vw;
+	height:4.28vw;
+	line-height:4.14vw;
+	padding:0 2.14vw;
+	font-size:1.42vw;
+	margin-top:2.14vw;
+}
+
+.sec03_con a img {
+	margin-left:0.714vw;
+}
+
+/*================================================================section4=======*/
+.section04 {
+	padding:5.71vw 3%;
+}
+
+.section04 h1 {
+	font-size:4.28vw;
+}
+.section04 h1 span {
+	font-size:1.78vw;
+	margin-left:4.28vw;
+}
+.slick-prev {
+	width:5.92vw;
+	height:7.5VW;
+	cursor:pointer;
+	background:rgba(0,0,0,0.5) url(http://innocentgagu.co.kr/images/d_prev.png)center center no-repeat;
+	background-size:1.21vw 1.92vw;
+}
+.slick-next {
+	width:5.92vw;
+	height:7.5VW;
+	cursor:pointer;
+	background:rgba(0,0,0,0.5) url(http://innocentgagu.co.kr/images/d_next.png)center center no-repeat;
+	background-size:1.21vw 1.92vw;
+}
+
+	.sec04_slide img {
+		width:100%;
+	}
+
+/*================================================================section5=======*/
+.section05 {
+	padding:10.71vw 0;
+}
+
+.sec05_txt em {
+	font-size:1.5VW;
+}
+.sec05_txt h1 {
+	font-size:3.57vw;
+}
+.sec05_txt p {
+	font-size:1.42vw;
+}
+
+.sec05_txt a {
+	padding:0 5.71vw;
+	line-height:4.28vw;
+	font-size:1.5VW;
+	margin-top:2.85vw;
+}
+
+
+
+/*================================================================section06=======*/
+.section06 {
+	padding:9.28vw 0;
+	background:url(http://innocentgagu.co.kr/images/sec7_bg.png)center top no-repeat;
+	background-size:100% 11.42vw;
+}
+
+.tab_menu li{
+	padding:0 5VW;
+	line-height:3.92vw;
+	height:3.92vw;
+	font-size:1.14vw;
+}
+
+.tab_con ul {
+	margin-top:3.57vw;
+}
+.tab_con ul li a{
+	padding:2.85vw 0;
+}
+
+.tab_con ul li dl dt span {
+	font-size:2.14vw;
+}
+.tab_con ul li dl dt em {
+	font-size:1.07vw;
+	margin-top:0.71vw;
+}
+
+.tab_con ul li dl dd p {
+	font-size:2.14vw;
+}
+
+em.view {
+	right:2.14vw;
+	width:2.85vw;
+	height:2.85vw;
+}
+.sec06_btn {
+	margin-top:4.28vw;
+}
+.sec06_btn a.more2 {
+	font-size:2.14vw;
+}
+
+}
+
+@media screen and (max-width:768px) {
+	header {
+		display:none;
+	}
+
+
+	.header {
+		height:16.9271vw;
+	}
+	.header h1 img {
+		height:6.640vw;
+	}
+	.gnb {
+		display:none;
+	}
+	.burger {
+		width:5.8594vw;
+		height:4.6875vw;
+	}
+	
+	/*================================================================visual=======*/
+
+	.vis_slide {
+		height:103.51vw;
+	}
+	.vis_txt {
+		top:35%;
+		left:3%;
+	}
+	.vis_txt em{
+		font-size:3.90vw;
+	}
+	.vis_txt h2 {
+		font-size:5.20vw;
+	}
+	.vis_txt p {
+		font-size:2.34vw;
+		margin-top:2.60vw;
+	}
+
+	.dots {
+		left:6.5%;
+		top:60%;
+	}
+	.dots .slick-dots li + li {
+		margin-left:3.9vw;
+	}
+	.dots .slick-dots li.slick-active button:before {
+		width:6.51vw;
+		height:6.51vw;
+	}
+	.dots .slick-dots li button{
+		width:2.6vw;
+		height:2.6vw;
+	}
+
+	
+	/*================================================================section1=======*/
+	.section01 {
+		height:60.09vw;
+	}
+
+	.sec01_txt h1 {
+		font-size:5.20vw;
+	}
+	.sec01_txt p {
+		font-size:2.34vw;
+	}
+	a.more {
+		bottom:-9.11vw;
+		font-size:2.34vw;
+		margin-top:3.90vw;
+	}
+	a.more img {
+		margin-left:1.30vw;
+	}
+
+	/*================================================================section2=======*/
+	.section02 {
+		padding:26.04vw 3% 0;
+		background:url(http://innocentgagu.co.kr/images/sec2_bg.png)center top no-repeat;
+		background-size:210.54vw 48.82vw;
+	}
+	.pager a {
+		width:9.11vw;
+		height:9.11vw;
+	}
+	a.prev {
+		left:1.90vw;
+		background:#000 url(http://innocentgagu.co.kr/images/d_prev.png)center center no-repeat;
+		background-size:2.21vw 3.51vw;
+	}
+	a.next {
+		right:1.90vw;
+		background:#000 url(http://innocentgagu.co.kr/images/d_next.png)center center no-repeat;
+		background-size:2.21vw 3.51vw;
+	}
+	.sec02_tit em {
+		font-size:2.34vw;
+	}
+	.sec02_tit h2 {
+		font-size:6.51vw;
+	}
+	.sec02_tit p {
+		font-size:2.34vw;
+	}
+	.sec02_slider {
+		max-width:182.29vw;
+		margin:6.51vw auto 0;
+	}
+
+	.sec02_slide {
+		padding:0 1.30vw;
+	}
+
+	.sec02_txt {
+		bottom:3.90vw;
+	}
+	.sec02_txt em {
+		font-size:2.08vw;
+	}
+	.sec02_txt h3 {
+		font-size:2.60vw;
+	}
+
+
+	
+	
+	/*================================================================section03=======*/
+	.section03 {
+		padding:10.41vw 0 0;
+	}
+	.section03 .inner {
+		padding:0 5%;
+	}
+	.sec03_tit em {
+		font-size:2.34vw;
+	}
+	.sec03_tit h1 {
+		font-size:5.85vw;
+	}
+	.sec03_tit p {
+		font-size:2.60vw;
+	}
+	.sec03_slide ul li {
+		width:50%;
+	}
+	.sec03_slide ul li:nth-child(n+7){
+		display:none;
+	}
+	.sec03_slide ul li {
+		padding:1.30vw 0.5vw;
+	}
+	.sec03_slide ul li a {
+		border-radius:6.510vw;
+		line-height:8.85vw;
+		font-size:2.604vw;
+	}
+	.sec03_slider .slick-prev {
+		width:2.604vw;
+		height:4.55vw;
+		left:-3.51vw;
+	}
+
+	.sec03_slider .slick-next {
+		width:2.60vw;
+		height:4.55vw;
+		right:-3.51vw;
+	}
+
+	.sec03_con {
+		padding:20.83vw 0;
+	}
+	.sec03_con em {
+		font-size:2.60vw;
+	}
+	.sec03_con h2 {
+		font-size:7.81vw;
+	}
+	.sec03_con p {
+		font-size:2.34vw;
+	}
+	.sec03_con a {
+		width:32.55vw;
+		height:7.81vw;
+		line-height:7.55vw;
+		padding:0 3.90vw;
+		font-size:2.60vw;
+		margin-top:3.90vw;
+	}
+
+	.sec03_con a img {
+		margin-left:1.30vw;
+	}
+
+
+	/*================================================================section4=======*/
+	.section04 {
+		padding:10.41vw 0;
+	}
+
+	.section04 h1 {
+		font-size:7.81vw;
+	}
+	.section04 h1 span {
+		font-size:3.25vw;
+		margin-left:7.81vw;
+	}
+	.slick-prev {
+		width:10.80vw;
+		height:13.67vw;
+		background-size:2.21vw 3.51vw;
+	}
+	.slick-next {
+		width:10.80vw;
+		height:13.67vw;
+		background-size:2.21vw 3.51vw;
+	}
+
+
+
+	/*================================================================section5=======*/
+	.section05 {
+		padding:19.53vw 0;
+	}
+	.sec05_txt em {
+		font-size:2.73vw;
+	}
+	.sec05_txt h1 {
+		font-size:6.51vw;
+	}
+	.sec05_txt p {
+		font-size:2.60vw;
+	}
+
+	.sec05_txt a {
+		padding:0 10.41vw;
+		line-height:7.81vw;
+		font-size:2.73vw;
+		margin-top:5.20vw;
+	}
+	
+
+	/*================================================================section06=======*/
+	.section06 {
+		padding:16.92vw 0;
+		background:url(http://innocentgagu.co.kr/images/sec7_bg.png)center top no-repeat;
+		background-size:100% 20.83vw;
+	}
+
+	.tab_menu li{
+		padding:0 9.11vw;
+		line-height:7.16vw;
+		height:7.16vw;
+		font-size:2.08vw;
+	}
+	.tab_con ul {
+		margin-top:6.51vw;
+	}
+	.tab_con ul li a{
+		padding:5.20vw 0;
+	}
+
+	.tab_con ul li dl dt span {
+		font-size:3.90vw;
+	}
+	.tab_con ul li dl dt em {
+		font-size:1.95vw;
+		margin-top:1.30vw;
+	}
+
+	.tab_con ul li dl dd p {
+		font-size:3.90vw;
+	}
+
+	em.view {
+		right:3.90vw;
+		width:5.20vw;
+		height:5.20vw;
+	}
+	.sec06_btn {
+		margin-top:7.81vw;
+	}
+	.sec06_btn a.more2 {
+		font-size:3.90vw;
+	}
+
+
+		
+}
+</style>
